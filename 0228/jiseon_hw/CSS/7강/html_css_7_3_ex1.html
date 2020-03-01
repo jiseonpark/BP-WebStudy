@@ -1,0 +1,45 @@
+<!--
+속성선택자는 []
+
+선택,id,class,속성선택자
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhmtl">
+<head>
+    <titile></titile>
+    
+    <style>
+        input {
+            color:green;
+            font-weight:bold;
+            font-size:50px;
+        }
+
+        input[type=password]{
+            color:red;
+            font-size:20px;
+            width:200px;
+        }
+
+        input[type=tel]{
+            color:greenyellow;
+        }
+
+        img[src]{
+            border:5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        이름 : <input type="text"/><br/>
+        아이디 : <input type="text"/><br/>
+        비밀번호 : <input type="password"/><br/>
+        전화번호 : <input type="tel"/><br/>
+        <img src="http://www.sba.seoul.kr/kr/images/header/Navi_dr.png"/><br/>
+    </form>
+
+</body>
+</html>
