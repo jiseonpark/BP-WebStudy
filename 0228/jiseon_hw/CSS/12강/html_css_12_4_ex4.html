@@ -1,0 +1,55 @@
+<!--(position속성)
+position:relative은 원래 있던 위치에서 이동
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        #red{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+
+        #wrap{
+            width:400px;
+            height:400px;
+            background-color: yellow;
+            position: relative;
+            top:100px;
+            left:100px;
+        }
+
+        #wrap .content1{
+            width:100px;
+            height:100px;
+            background-color: green;
+            position: relative;         
+            left:100px;
+        }
+
+        #wrap .content2{
+            width:100px;
+            height:100px;
+            background-color: blue;
+            position:relative;
+            top:100px;
+            left:100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="red"></div>
+    <div id="wrap">
+        <div class="content1"></div>
+        <div class="content2"></div>
+    </div>
+</body>
+</html>

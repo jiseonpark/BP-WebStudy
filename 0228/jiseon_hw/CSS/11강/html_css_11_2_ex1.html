@@ -1,0 +1,53 @@
+<!--(box-sizing속성)
+전체 사이즈의 크기 변경 가능
+box-sizing의 border을 안쪽으로 즉 크기변경x border-box, 바깥쪽은 content-box
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        body{
+            margin:0;
+            background-color: #dddddd;
+        }
+
+        div{
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:10px;
+            border:10px solid #ff8d00;
+        }
+
+        div:nth-child(1){
+            margin:0;
+            border:0;
+            padding:0;
+           
+            background-image:url('http://www.sba.seoul.kr/kr/images/index/visual5.jpg');
+        }
+
+        div:nth-child(2){
+            background-color: #0000ff;
+            box-sizing:border-box;
+        }
+
+        div:nth-child(3){
+            background-color: #00ff00;
+            box-sizing:content-box;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>200*200</div>
+    <div>200*200</div>
+    <div>200*200</div>
+</body>
+</html>
