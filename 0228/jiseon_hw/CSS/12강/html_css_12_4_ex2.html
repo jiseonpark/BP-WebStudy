@@ -1,0 +1,67 @@
+<!--(position 속성)
+position:fixed;는 화면이 움직여도 항상 그 위치에 놓임, 움직임 x
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            opacity:0.7;
+        }
+
+        div:nth-child(1){
+            background-color: red;
+            position: fixed;
+            top:0;
+            left:0;
+        }
+
+        div:nth-child(2){
+            background-color: green;
+            position:absolute;
+            top:50px;
+            left:50px;
+        }
+
+        div:nth-child(3){
+            background-color: blue;
+            position: absolute;
+            top:100px;
+            left:100px;
+        }
+
+        #wrap{
+            width:300px;
+            height:300px;
+            background-color: yellow;
+            position: fixed;
+            top:200px;
+            left:200px;
+        }
+
+        #wrap .content{
+            width:100px;
+            height:100px;
+            background-color:black;
+            position: absolute;
+            top:100px;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+</body>
+</html>
